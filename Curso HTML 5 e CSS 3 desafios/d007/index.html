@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagem cortada</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagem que é corada conforme o tamanho da sua janela do navegador</h1>
+    <p>basicamente fazemos os cortes em uma aplicação de edição(photoshop/gimp) e apenas inserimos as imagens ao nosso código seguindo a regra da imagem flexível!</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/paisagem-p.jpg.jpg">
+        <source media="(max-width:1050px )" srcset="imagens/paisagem-m.jpg.jpg">
+        <img src="imagens/paisagem-base.jpg.jpg" alt="paisagem">
+    </picture>
+    
+</body>
+</html>
