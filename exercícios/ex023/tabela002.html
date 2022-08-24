@@ -13,7 +13,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
-            
+            position: relative;
         }
         
         td, th{
@@ -37,6 +37,12 @@
 
         tbody > tr:nth-child(even){
             background-color: lightgray;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
 
         td.num{
